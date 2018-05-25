@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+  <link href = "index.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Shoppify</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Products</a></li>
+					<li><a href = "#">My Cart <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<h3>Sneakers for developers</h3>      
+		<p></p>
+	<div class="row">
+		<div class="col-sm-4" id = "af1">
+			<center>
+			<img class = "af1" src = "images/af1.jpg">
+			<input class = "af1" id = 'af1-qty' type='number' min = "0"  placeholder = "Quantity"><br>
+			<input class = "af1" id = 'size' type='number' min = "36" max = "45"  placeholder = "Size"><br>
+			Price: 150$ <br>
+			<button onclick = "addItem('af1')">Add to Cart</button>
+			</center><br>
+		</div>
+		<div class="col-sm-4" id = "converse">
+			<center>
+			<img class = "converse" src = "images/converse.jpg">	
+			<input class = "converse" id = 'converse-qty' type='number' min = "0" placeholder = "Quantity"><br>
+			<input class = "converse" id = 'size' type='number' min = "36" max = "45"  placeholder = "Size"><br>
+			Price: 100$ <br>
+			<button onclick = "addItem('converse')">Add to Cart</button>
+			</center><br>
+		</div>
+		<div class="col-sm-4" id = "af1-high">
+			<center>
+			<img class = "af1-high" src = "images/af2.jpg">
+			<input class = "af1-high" id = 'af1-high-qty' type='number' min = "0" placeholder = "Quantity"><br>
+			<input class = "af1-high" id = 'size' type='number' min = "36" max = "45"  placeholder = "Size"><br>
+			Price: 180$ <br>
+			<button onclick = "addItem('af1-high')">Add to Cart</button>
+			</center><br>
+		</div>
+	</div>
+	<button onclick = "showTotal()">Total</button>
+	
+	<div id = "abc">
+	</div>
+	</div>
+</div>
+
+</body>
+</html>
